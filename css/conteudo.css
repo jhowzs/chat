@@ -1,0 +1,38 @@
+.main-content {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.user {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-profile {
+  display: flex;
+  gap: 20px;
+}
+
+.user-info h2 {
+  color: #e1e1e6;
+  font-size: 1rem;
+}
+
+.user-info span {
+  color: #00b37e;
+  font-size: 0.75rem;
+  font-weight: 400;
+  margin-left: 10px;
+  position: relative;
+}
+
+.user-info span::before {
+  content: "";
+  background: #00b37e;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  top: 3px;
+  left: -10px;
+  position: absolute;
+}

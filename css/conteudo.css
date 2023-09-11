@@ -47,6 +47,7 @@
   font-weight: 400;
 }
 
+/* message chat */
 .message {
   display: grid;
   margin-bottom: 80px;
@@ -120,4 +121,40 @@ input,
 button {
   background-color: transparent;
   border: none;
+}
+
+/* Responsive */
+
+@media (max-width: 1600px) {
+  .container {
+    max-width: 1200px;
+  }
+  .message .text {
+    width: fit-content;
+    max-width: 80ch;
+  }
+}
+
+@media (max-width: 900px) {
+  .message .text {
+    width: fit-content;
+    max-width: 50ch;
+  }
+}
+
+@media (max-width: 600px) {
+  .message .text,
+  .message .text-2 {
+    font-size: 0.8rem;
+  }
+  .main-content {
+    margin: 24px 32px;
+  }
+  .message {
+    margin-bottom: 40px;
+  }
+  .message .text {
+    width: fit-content;
+    max-width: fit-content;
+  }
 }

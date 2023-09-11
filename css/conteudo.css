@@ -6,6 +6,7 @@
 .user {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .user-profile {
@@ -22,7 +23,7 @@
   color: #00b37e;
   font-size: 0.75rem;
   font-weight: 400;
-  margin-left: 10px;
+  margin-left: 11px;
   position: relative;
 }
 
@@ -35,4 +36,48 @@
   top: 3px;
   left: -10px;
   position: absolute;
+}
+
+.message-time {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  color: #acacaf;
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.message {
+  display: grid;
+}
+
+.message span {
+  color: #acacaf;
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.message .text {
+  border-radius: 0px 8px 8px 8px;
+  max-width: max-content;
+  background: #633bbc;
+  padding: 14px;
+  margin-top: 10px;
+}
+
+.message .text-2 {
+  border-radius: 8px 8px 0px 8px;
+  max-width: max-content;
+  background: #07847e;
+  padding: 14px;
+  margin-top: 10px;
+}
+
+.message-sent {
+  display: grid;
+  justify-content: end;
+}
+
+.message-sent span {
+  text-align: end;
 }

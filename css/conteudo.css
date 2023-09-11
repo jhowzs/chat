@@ -49,6 +49,7 @@
 
 .message {
   display: grid;
+  margin-bottom: 80px;
 }
 
 .message span {
@@ -73,6 +74,10 @@
   margin-top: 10px;
 }
 
+.message-received {
+  margin-bottom: 40px;
+}
+
 .message-sent {
   display: grid;
   justify-content: end;
@@ -80,4 +85,39 @@
 
 .message-sent span {
   text-align: end;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  background: #282843;
+  border-radius: 999px;
+  padding: 14px 24px;
+}
+
+.input-wrapper input {
+  flex: 1;
+  outline: none;
+  color: #e1e1e6;
+}
+
+.input-wrapper:focus-within {
+  outline: 2px solid white;
+}
+
+.input-wrapper input::placeholder {
+  color: #acacaf;
+  font-size: 0.75rem;
+}
+
+.input-wrapper button i {
+  color: #e1e1e6;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+input,
+button {
+  background-color: transparent;
+  border: none;
 }
